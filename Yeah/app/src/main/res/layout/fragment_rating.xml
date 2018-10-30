@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RatingFragment"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+        <TableRow>
+            <TextView
+                android:id="@+id/tvMath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:padding="5dp"
+                android:text="Toán học"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="#FF4081"/>
+            <TextView
+                android:id="@+id/tvPhysics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="Vật lý"
+                android:textColor="#787878"/>
+            <TextView
+                android:id="@+id/tvChemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="Hóa học"
+                android:textColor="#787878"/>
+            <TextView
+                android:id="@+id/tvEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="Tiếng anh"
+                android:textColor="#787878"/>
+        </TableRow>
+    </TableLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/rcListRating"
+            android:layout_margin="15px"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/tvUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Dữ liệu đang được cập nhật"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+
+
+</LinearLayout>

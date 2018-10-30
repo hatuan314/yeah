@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TableLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:background="#ededed">
+        <TableRow>
+            <TextView
+                android:id="@+id/tvSubjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="7"
+                android:text="Môn Học"
+                android:textSize="18sp"
+                android:padding="7dp"/>
+
+            <TextView
+                android:id="@+id/tvScores"
+                android:background="#cfcfcf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:text="45"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
